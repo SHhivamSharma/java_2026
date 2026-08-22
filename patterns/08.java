@@ -1,23 +1,26 @@
-// Inverted Half Pyramid with Numbers 
-// 1 2 3 4 5 6 7 
-// 1 2 3 4 5 6 
-// 1 2 3 4 5 
-// 1 2 3 4 
-// 1 2 3 
-// 1 2 
+//Floyd's Triangle
 // 1 
+// 2 3 
+// 4 5 6 
+// 7 8 9 10 
+// 11 12 13 14 15 
+// 16 17 18 19 20 21 
+// 22 23 24 25 26 27 28 
 
 
+//Floyd's Triangle -
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      int n = 7;
-      for(int i = 1 ; i<=n ; i++){
-        for(int j = 1 ; j <= n-i+1 ; j++){
-            System.out.print(j+ " ");
+     int n = 7 ;
+     int num = 1;
+     for (int i = 0 ; i< n ; i++){
+        for(int j = 0 ; j <= i ; j++){
+            System.out.print(num+ " ");
+            num++;
         }
         System.out.println();
-      }
+     }
     }
 }   
